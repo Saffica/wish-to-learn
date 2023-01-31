@@ -3,6 +3,7 @@ package internal
 import (
 	"fmt"
 	"net/http"
+	"time"
 
 	"github.com/gin-gonic/gin"
 )
@@ -38,5 +39,6 @@ func (h *ApiHandler) HandleRoutes() {
 }
 
 func (h *ApiHandler) test(c *gin.Context) {
+	fmt.Println("test", time.Now())
 	c.JSON(http.StatusOK, map[string]bool{"test": true})
 }
