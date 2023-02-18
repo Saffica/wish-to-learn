@@ -6,7 +6,6 @@ import PageNotFound from "./PageNotFound";
 const AppRouter = () => {
     //авторизован или нет
     const user = true;
-    console.log(user)
     return user ?
         (
             <Routes>
