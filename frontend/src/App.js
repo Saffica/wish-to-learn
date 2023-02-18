@@ -1,11 +1,14 @@
-import React from 'react'
-import Login from './pages/Login';
+import React from 'react';
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from './components/AppRouter';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="wrapper">
-      <Login></Login>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <AppRouter />
+    </BrowserRouter>
   );
 }
 
