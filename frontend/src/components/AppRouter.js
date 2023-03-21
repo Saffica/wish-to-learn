@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { privateRoutes, publicRoutes } from "../routes";
-import Login from "./Login";
+import {Login} from "./Login";
 import PageNotFound from "./PageNotFound";
 
 const AppRouter = () => {
