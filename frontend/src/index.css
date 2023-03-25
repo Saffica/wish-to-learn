@@ -17,3 +17,7 @@ code {
   min-width: 100vw;
   min-height: 100vh;
 }
+
+.container {
+  max-width: 1300px;
+}

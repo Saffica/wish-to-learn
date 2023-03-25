@@ -1,8 +1,8 @@
 import Courses from './components/Courses';
-import {Login} from './components/Login';
+import { Login } from './components/Login';
 import Course from './components/Course';
 
-import {COURSES_ROUTE, COURSE_ROUTE, LOGIN_ROUTE} from './utils/consts';
+import { COURSES_ROUTE, COURSE_ROUTE, LOGIN_ROUTE } from './utils/consts';
 
 export const publicRoutes = [
     {
