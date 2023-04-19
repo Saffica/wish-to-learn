@@ -1,0 +1,13 @@
+.nav-bar-item,
+.nav-bar-item__active {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-bar-item__active {
+    color: #89A4D6;
+}

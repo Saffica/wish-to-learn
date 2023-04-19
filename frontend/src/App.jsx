@@ -1,15 +1,28 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import { Header } from './components/Header';
-import AppRouter from './components/AppRouter';
+import { Routes, Route } from 'react-router-dom';
+import {HomePage} from './pages';
+import {CoursePage} from './pages';
+import {CoursesPage} from './pages';
+import {NotFoundPage} from './pages';
+import {PlanListPage} from './pages';
+import {AboutPage} from './pages';
+import { Layout } from './components';
+import './App.css';
 
-function App() {
+
+export const App = () => {
     return (
-        <BrowserRouter>
-            <Header />
-            <AppRouter />
-        </BrowserRouter>
+        <>
+            <Routes>
+                <Route path='/' element={<Layout />}>
+                    <Route index element={<HomePage />} />
+                    <Route path='course' element={<CoursePage />} />
+                    <Route path='courses' element={<CoursesPage />} />
+                    <Route path='plan_list' element={<PlanListPage />} />
+                    <Route path='about' element={<AboutPage />} />
+                    <Route path='*' element={<NotFoundPage />} />
+                </Route>
+            </Routes>
+        </>
     );
 }
-
-export default App;

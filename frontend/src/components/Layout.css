@@ -1,0 +1,9 @@
+header {
+    background-color: #42597B;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
