@@ -1,18 +1,11 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
-import { Logo } from "./Header/Logo";
-import { NavBar } from "./Header/NavBar";
-import './Layout.css';
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import { Header } from '../components';
 
 export const Layout = () => {
     return (
         <>
-            <header>
-                <div className="container">
-                    <Logo />
-                    <NavBar />
-                </div>
-            </header>
+            <Header />
             <main>
                 <Outlet />
             </main>
