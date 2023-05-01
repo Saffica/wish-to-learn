@@ -1,18 +1,16 @@
-import { HomePage, CoursePage, CoursesPage, NotFoundPage, PlanListPage, AboutPage, ProfilePage } from '../pages';
+import { WelcomePage, CoursesPage, NotFoundPage, ProfilePage, LoginPage } from '../../pages';
 import { Routes, Route } from 'react-router-dom';
-import { Layout } from './Layout';
+import { Layout } from '../layout/Layout';
 import React from 'react';
 
 export const PageRoutes = () => {
     return (
         <Routes>
             <Route path='/' element={<Layout />}>
-                <Route index element={<HomePage />} />
-                <Route path='course' element={<CoursePage />} />
+                <Route index element={<WelcomePage />} />
                 <Route path='courses' element={<CoursesPage />} />
-                <Route path='plan_list' element={<PlanListPage />} />
-                <Route path='about' element={<AboutPage />} />
                 <Route path='profile' element={<ProfilePage />} />
+                <Route path='login' element={<LoginPage />} />
                 <Route path='*' element={<NotFoundPage />} />
             </Route>
         </Routes>

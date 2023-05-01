@@ -1,7 +1,5 @@
-export {HomePage} from './HomePage';
-export {CoursePage} from './CoursePage';
-export {CoursesPage} from './CoursesPage';
-export {NotFoundPage} from './NotFoundPage';
-export {PlanListPage} from './PlanListPage';
-export {AboutPage} from './AboutPage';
-export {ProfilePage} from './ProfilePage';
+export { CoursesPage } from './Courses/CoursesPage';
+export { NotFoundPage } from './NotFound/NotFoundPage';
+export { ProfilePage } from './Profile/ProfilePage';
+export { WelcomePage } from './Welcome/WelcomePage';
+export { LoginPage } from './Login/LoginPage';
