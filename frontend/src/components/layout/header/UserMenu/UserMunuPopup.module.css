@@ -6,7 +6,7 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 1px 12px 2px rgba(36, 36, 36, 0.07);
-    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+    transition: opacity 0.5s, transform 0.5s, visibility 0.3s;
     transition-timing-function: cubic-bezier(0.25, 1.15, 0.5, 1.1);
     z-index: 1;
 }
@@ -17,7 +17,7 @@
 
 .open {
     width: 300px;
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 .info {
@@ -57,4 +57,24 @@
 .link:hover {
     color: #000;
     background-color: #c5c5c5;
+}
+
+
+@media screen and (max-width: 768px) {
+    .popup {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        top: 60px
+    }
+
+    .closed {
+        transform: translateY(0);
+        transform: translateX(-120%);
+    }
+
+    .open {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
 }
