@@ -1,6 +1,7 @@
 import React from 'react';
 import { Logo } from './Logo/Logo';
-import { UserMenu } from './UserMenu/UserMenu';
+import { User } from './User/User';
+import { Navbar } from './Navbar/Navbar';
 import './Header.css';
 
 export const Header = () => {
@@ -10,7 +11,8 @@ export const Header = () => {
         <header>
             <div className='header__wrapper'>
                 <Logo />
-                <UserMenu isAuthorized={isAuthorized} />
+                <Navbar />
+                <User isAuthorized={isAuthorized} />
             </div>
         </header>
     )

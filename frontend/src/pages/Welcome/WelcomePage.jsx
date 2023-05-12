@@ -3,8 +3,15 @@ import { ReactComponent as Desktop } from '../../imgs/desktop.svg';
 import style from './WelcomePage.module.css';
 
 export const WelcomePage = () => {
+
+    const welcomePageHeight = () => {
+        const headerHeight = 92;
+        
+        return window.innerHeight - headerHeight;
+    }
+
     return (
-        <div className={style.welcome}>
+        <div className={style.welcome} style={{ height: { welcomePageHeight } }}>
             <section className={style.general}>
                 <div className={style.wrapper}>
                     <div className={style.top}>

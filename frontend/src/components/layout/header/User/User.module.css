@@ -1,0 +1,36 @@
+.user { 
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.link a {
+  font-family: 'Kurica Lapoi';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 16px;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.link a:hover { 
+  background-color: #0e0d0d1a;
+}
+
+.photo{ 
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+}
+
+.photo img { 
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}

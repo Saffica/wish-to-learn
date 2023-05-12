@@ -1,7 +1,4 @@
-.logo{ 
-    background-image: url('../../../../imgs/logo.svg');
-    background-position: center;
-    background-repeat: no-repeat;
+.logo {
     height: 60px;
     width: 60px;
 }

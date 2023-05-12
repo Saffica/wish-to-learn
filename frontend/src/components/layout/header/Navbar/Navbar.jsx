@@ -1,26 +1,26 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import style from './Navbar.module.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import s from './Navbar.module.css';
 
-export const Navbar = ({ items }) => {
+export const Navbar = () => {
+
+    const items = [
+        { title: 'Главная', link: '/', id: '1' },
+        { title: 'Список планов', link: 'courses', id: '2' }
+    ]
+
     return (
-        <nav
-            className={style.navbar}
-        >
-            <ul className={style.items}>
-                {items.length
-                    ? items.map(({ link, title, id }) => {
-                        return <li className={style.item} key={id}>
-                            <NavLink
-                                className={({ isActive }) => isActive ? `${style.link} ${style.active}` : style.link}
-                                to={link}>
-                                {title}
-                            </NavLink>
-                        </li>
-                    })
-                    : ''
-                }
+        <div className={s.navbar}>{
+            <ul className={s.list}>
+                {items.map(({ title, link, id }) => <li className={s.item} key={id}>
+                    <NavLink
+                        to={link}
+                        className={({ isActive }) => isActive ? s.active : ''}
+                    >{title}
+                    </NavLink>
+                </li>
+                )}
             </ul>
-        </nav>
-    );
-};
+        }</div>
+    )
+}
