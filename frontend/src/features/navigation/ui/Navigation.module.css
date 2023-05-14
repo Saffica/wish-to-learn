@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.item a {
+    font-family: 'Kurica Lapoi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.item a:hover { 
+    background-color: #0e0d0d1a;
+}
+
+.item .active { 
+    color: #BBD260;
+}

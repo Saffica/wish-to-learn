@@ -1,9 +1,11 @@
 import React from "react";
 
-export const CoursesPage = () => { 
+const CoursesPage = () => { 
     return (
         <div className="courses-page">
            Courses
         </div>
     )
 }
+
+export default CoursesPage;
