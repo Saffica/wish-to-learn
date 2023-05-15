@@ -1,7 +1,7 @@
 import React from 'react';
 import Routing from '../pages';
 import {Suspense} from 'react';
-import './index.css';
+import './index.module.css';
 
 const App = () => {
     return (

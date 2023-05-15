@@ -1,7 +1,3 @@
-import React from 'react';
-
-const ProfilePage = () => {
-    return <div className='profile-page'>Profile Page</div>;
-};
+import ProfilePage from "./ui/ProfilePage";
 
 export default ProfilePage;

@@ -1,21 +1,22 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import { HeaderLink } from '../../../shared';
+import classes from './Navigation.module.css';
 
-const Navigation = () => {
+export const Navigation = () => {
     const items = [
-        {title: 'Главная', link: '/', id: '1'},
-        {title: 'Список планов', link: 'courses', id: '2'},
+        { title: 'Главная', link: '/', id: '1' },
+        { title: 'Список планов', link: 'courses', id: '2' },
     ];
 
     return (
-        <div className='header__navigation navigation'>
+        <div className={classes.navigation}>
             {
-                <ul className='navigation__list'>
-                    {items.map(({title, link, id}) => (
+                <ul className={classes.navigationList}>
+                    {items.map(({ title, link, id }) => (
                         <li
-                            className='navigation__item'
+                            className={classes.navigationItem}
                             key={id}>
-                            <NavLink to={link}>{title}</NavLink>
+                            <HeaderLink link={link} title={title} />
                         </li>
                     ))}
                 </ul>
@@ -23,5 +24,3 @@ const Navigation = () => {
         </div>
     );
 };
-
-export default Navigation;

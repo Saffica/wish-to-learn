@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Logo = () => {
+export const Logo = () => {
     return (
         <div className='wish-to-lern__logo'>
             <NavLink to='/'>
@@ -39,5 +39,3 @@ const Logo = () => {
         </div>
     );
 };
-
-export default Logo;

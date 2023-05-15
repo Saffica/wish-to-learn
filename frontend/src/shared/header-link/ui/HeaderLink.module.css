@@ -1,16 +1,4 @@
-.navbar {
-    display: flex;
-    width: 100%;
-    padding: 0 50px;
-}
-
-.list {
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
-}
-
-.item a {
+.headerLink {
     font-family: 'Kurica Lapoi';
     font-weight: 400;
     font-size: 16px;
@@ -23,10 +11,10 @@
     transition: .3s;
 }
 
-.item a:hover { 
+.headerLink:hover {
     background-color: #0e0d0d1a;
 }
 
-.item .active { 
+.headerLink.active {
     color: #BBD260;
 }

@@ -1,8 +1,9 @@
 import React from 'react';
-import {lazy} from 'react';
-import {Routes, Route} from 'react-router';
+import { lazy } from 'react';
+import { Header } from '../widgets';
+import { Routes, Route } from 'react-router';
+import { Outlet } from 'react-router-dom';
 
-const Header = lazy(() => import('../widgets/'));
 const CoursesPage = lazy(() => import('./courses'));
 const LoginPage = lazy(() => import('./login'));
 const NotFoundPage = lazy(() => import('./not-found'));
@@ -14,7 +15,15 @@ const Routing = () => {
         <Routes>
             <Route
                 path='/'
-                element={<Header />}>
+                element={
+                    <>
+                        <Header />
+                        <main>
+                            <Outlet />
+                        </main>
+                        <footer></footer>
+                    </>
+                }>
                 <Route
                     index
                     element={<WelcomePage />}

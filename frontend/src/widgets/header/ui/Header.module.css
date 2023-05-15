@@ -1,9 +1,9 @@
-header {
+.header {
     background-color: #42597B;
     padding: 16px;
 }
 
-.header__wrapper {
+.headerWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
