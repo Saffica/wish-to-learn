@@ -1,9 +1,9 @@
 import React from "react";
 
-const CoursesPage = () => { 
+const CoursesPage = () => {
     return (
         <div className="courses-page">
-           Courses
+            Courses
         </div>
     )
 }

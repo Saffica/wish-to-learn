@@ -8,7 +8,7 @@
 }
 
 .general .wrapper {
-    background-image: url('../../imgs/welcomeBg.svg');
+    /* background-image: url('../../imgs/welcomeBg.svg'); */
     background-repeat: no-repeat;
     background-position: right top;
     background-color: #fff;
@@ -42,18 +42,6 @@
 
 .top .subtitle {
     font-size: 40px;
-}
-
-.top button {
-    background-color: #42597B;
-    color: #fff;
-    padding: 24px;
-    width: 100%;
-    border: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 .items {
@@ -114,21 +102,11 @@
     color: #FFFFFF;
 }
 
-.registration .right button {
-    margin-top: 21px;
-    border: none;
-    padding: 25px 75px;
-    background-color: #FFFFFF;
-    color: #42597B;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.registration .left{ 
+.registration .left {
     position: relative;
 }
 
-.registration .left::after{
+.registration .left::after {
     position: absolute;
     content: '';
     top: -1px;
@@ -138,6 +116,6 @@
     border-left: 44px solid #89A4D6;
 }
 
-.registration .right{ 
+.registration .right {
     padding-left: 40px;
 }
