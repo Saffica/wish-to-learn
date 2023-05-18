@@ -1,14 +1,19 @@
-.welcome {
+.welcomePage {
     width: 100%;
     background: linear-gradient(to bottom, #FFFFFF 50%, #42597B 50%);
 }
 
+.welcomePage .wrapper {
+    margin: 250px auto 0 auto;
+    width: fit-content;
+}
+
+/* 
 .general {
     margin-top: 171px;
 }
 
 .general .wrapper {
-    /* background-image: url('../../imgs/welcomeBg.svg'); */
     background-repeat: no-repeat;
     background-position: right top;
     background-color: #fff;
@@ -17,67 +22,6 @@
 .wrapper {
     max-width: 1600px;
     margin: 0 auto;
-}
-
-.top {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase;
-    max-width: 364px;
-}
-
-.top .description {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    color: #89A4D6
-}
-
-.top .title {
-    font-size: 48px;
-    color: #42597B;
-}
-
-.top .subtitle {
-    font-size: 40px;
-}
-
-.items {
-    margin-top: 150px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.item {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    padding: 35px 40px;
-    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-    background-color: #fff;
-}
-
-.title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    color: #252B42;
-}
-
-.line {
-    width: 30%;
-    height: 1px;
-    background-color: #000;
-    margin: 20px 0;
-}
-
-.description {
-    font-family: 'Montserrat';
-    font-style: normal;
-    color: #737373;
 }
 
 .registration {
@@ -118,4 +62,4 @@
 
 .registration .right {
     padding-left: 40px;
-}
+} */

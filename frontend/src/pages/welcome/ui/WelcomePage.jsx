@@ -1,65 +1,22 @@
 import React from 'react';
 // import { ReactComponent as Desktop } from 'imgs/desktop.svg';
 import classes from './WelcomePage.module.css';
-import { Button } from '../../../shared'
+import { AboutPlatform } from '../../../widgets';
+import { getHeight } from '../lib/getHeight';
 
 const WelcomePage = () => {
-
-    const welcomePageHeight = () => {
-        const headerHeight = 92;
-
-        return window.innerHeight - headerHeight;
-    };
+    console.log(getHeight())
 
     return (
         <div
-            className={classes.welcome}
-            style={{ height: { welcomePageHeight } }}>
-            <section className={classes.general}>
-                <div className={classes.wrapper}>
-                    <div className={classes.top}>
-                        <p className={classes.description}>ПЛАТФОРМА ДЛЯ самообразования</p>
-                        <p className={classes.title}>хочу учу</p>
-                        <p className={classes.subtitle}>возьми свое обучение под контроль</p>
-                        <Button title='К списку планов' width='100%' backgroundColor='#42597B' height='64px' color='#fff' />
-                    </div>
-                    <div className={classes.items}>
-                        <div className={classes.item}>
-                            {/* {<Desktop />} */}
-                            <div className={classes.title}>Составляй план обучения</div>
-                            <div className={classes.line}></div>
-                            <div className={classes.description}>
-                                Реалистичный и достижимый план поможет добиться успеха в самообучении.
-                            </div>
-                        </div>
-                        <div className={classes.item}>
-                            {/* {<Desktop />} */}
-                            <div className={classes.title}>Составляй план обучения</div>
-                            <div className={classes.line}></div>
-                            <div className={classes.description}>
-                                Реалистичный и достижимый план поможет добиться успеха в самообучении.
-                            </div>
-                        </div>
-                        <div className={classes.item}>
-                            {/* {<Desktop />} */}
-                            <div className={classes.title}>Составляй план обучения</div>
-                            <div className={classes.line}></div>
-                            <div className={classes.description}>
-                                Реалистичный и достижимый план поможет добиться успеха в самообучении.
-                            </div>
-                        </div>
-                        <div className={classes.item}>
-                            {/* {<Desktop />} */}
-                            <div className={classes.title}>Составляй план обучения</div>
-                            <div className={classes.line}></div>
-                            <div className={classes.description}>
-                                Реалистичный и достижимый план поможет добиться успеха в самообучении.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className={classes.registration}>
+            className={classes.welcomePage}
+            style={{ height: { getHeight } }}>
+            <div className={classes.wrapper}>
+                <AboutPlatform />
+            </div>
+
+
+            {/* <section className={classes.registration}>
                 <div className={classes.wrapper}>
                     <div className={classes.left}>
                         С помощью нашей платформы пользователи получают возможность создавать курсы, которые агрегируют
@@ -81,7 +38,7 @@ const WelcomePage = () => {
                         <Button title='Напиши нам' />
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 };
