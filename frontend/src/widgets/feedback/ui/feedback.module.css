@@ -1,0 +1,14 @@
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    background-color: #89A4D6;
+    max-width: 115px;
+}
+
+.item { 
+    font-family: 'Mysl';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+}
