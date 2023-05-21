@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     background-color: #89A4D6;
-    max-width: 115px;
+    width: 1115px;
+    border-radius: 16px;
 }
 
 .item { 
