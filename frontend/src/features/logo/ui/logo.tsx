@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import classes from './logo.module.css';
-import logoPath from '../../../shared/imgs/logo.png';
+import logoPath from '../lib/imgs/logo.png';
 
 export const Logo = () => {
     return (

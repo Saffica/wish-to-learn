@@ -1,6 +1,7 @@
 declare const _brand: unique symbol
 
 declare global {
+
     export type ButtonProps = {
         width?: string,
         height?: string,
@@ -18,6 +19,13 @@ declare global {
     export type FooterProps = {
         text: string;
     }
+
+    export type AboutPlatformProps = {
+        className?: string;
+    }
+
+    export type RegistrationProps = AboutPlatformProps;
+    export type FeedbackProps = AboutPlatformProps;
 }
 
 export { }

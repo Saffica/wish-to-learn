@@ -7,11 +7,9 @@ import classes from './welcome.module.css';
 const WelcomePage = () => {
     return (
         <div className={classes.welcome}>
-            <div className={classes.container}>
-                <AboutPlatform />
-            </div>
-            <Registration />
-            <Feedback />
+            <AboutPlatform className={classes.about} />
+            <Registration className={classes.registration}/>
+            <Feedback className={classes.feedback}/>
         </div>
     );
 };

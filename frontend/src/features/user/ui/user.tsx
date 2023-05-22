@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import { BsPersonCircle } from 'react-icons/bs';
 import { HeaderLink } from '../../../shared';
-import profileIconPath from '../../../shared/imgs/profile.png';
+import profileIconPath from '../lib/imgs/profile.png';
 import classes from './user.module.css';
 
 export const User = () => {

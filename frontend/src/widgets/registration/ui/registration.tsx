@@ -1,9 +1,9 @@
 import { Button } from '../../../shared';
 import classes from './registration.module.css';
 
-export const Registration = () => {
+export const Registration = (props: RegistrationProps) => {
     return (
-        <div className={classes.registration}>
+        <div className={`${classes.registration} ${props.className}`}>
             <div className={classes.container}>
                 <div className={classes.left}>
                     С помощью нашей платформы пользователи получают возможность создавать курсы, которые агрегируют
