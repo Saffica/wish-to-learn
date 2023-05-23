@@ -8,8 +8,8 @@ const WelcomePage = () => {
     return (
         <div className={classes.welcome}>
             <AboutPlatform className={classes.about} />
-            <Registration className={classes.registration}/>
-            <Feedback className={classes.feedback}/>
+            <Registration className={classes.registration} />
+            <Feedback className={classes.feedback} />
         </div>
     );
 };
