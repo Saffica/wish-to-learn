@@ -1,0 +1,20 @@
+.headerLink {
+    font-family: 'Kurica Lapoi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.headerLink:hover {
+    background-color: #0e0d0d1a;
+}
+
+.headerLink.active {
+    color: #BBD260;
+}
