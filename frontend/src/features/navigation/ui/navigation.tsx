@@ -1,4 +1,4 @@
-import classes from './navigation.module.css';
+import classes from './navigation.module.scss';
 import { HeaderLink } from '../../../shared';
 
 export const Navigation = () => {

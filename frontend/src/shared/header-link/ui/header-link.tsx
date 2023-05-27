@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom';
-import classes from './header-link.module.css';
+import classes from './header-link.module.scss';
 
-export const HeaderLink = ({ title, link }: HeaderLinkProps): JSX.Element => {
+export const HeaderLink: React.FunctionComponent<IHeaderLinkProps> = ({ link, title }) => {
     return (
         <NavLink
             to={link}
-            className={classes.headerLink}>
+            className={({ isActive }) => isActive ? `${classes.headerLink} ${classes.active}` : classes.headerLink}>
             {title}
         </NavLink>
     );

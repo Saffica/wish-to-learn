@@ -1,14 +1,11 @@
-import { BrowserRouter } from 'react-router-dom';
-import Routing from '../page';
-import classes from './index.module.css';
+import { Router } from './router';
+import classes from './index.module.scss';
 
-function App() {
+const App: React.FunctionComponent = () => {
     return (
-        <BrowserRouter>
-            <div className={classes.app}>
-                <Routing />
-            </div>
-        </BrowserRouter>
+        <div className={classes.app}>
+            <Router />
+        </div>
     );
 }
 

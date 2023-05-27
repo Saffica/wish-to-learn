@@ -1,5 +1,5 @@
 import { Button } from '../../../shared';
-import classes from './feedback.module.css';
+import classes from './feedback.module.scss';
 import firstPath from '../lib/imgs/1.png';
 import secondPath from '../lib/imgs/2.png';
 import thirdPath from '../lib/imgs/3.png';
@@ -12,7 +12,7 @@ import ninthPath from '../lib/imgs/9.png';
 import tenthPath from '../lib/imgs/10.png';
 import eleventh from '../lib/imgs/11.png';
 
-export const Feedback = (props: FeedbackProps): JSX.Element => {
+export const Feedback: React.FunctionComponent<IFeedbackProps> = (props) => {
     return (
         <div className={`${classes.feedback} ${props.className}`}>
             <div className={classes.left}>

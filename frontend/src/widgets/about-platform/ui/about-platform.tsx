@@ -1,10 +1,10 @@
 import { Button } from '../../../shared';
 import { items } from '../consts/items';
-import classes from './about-platform.module.css';
+import classes from './about-platform.module.scss';
 import desktopImgPath from '../lib/imgs/desktop.png';
 
 
-export const AboutPlatform = (props: AboutPlatformProps): JSX.Element => {
+export const AboutPlatform: React.FunctionComponent<IAboutPlatformProps> = (props) => {
     return (
         <div className={`${classes.about} ${props.className}`} >
             <div className={classes.top}>

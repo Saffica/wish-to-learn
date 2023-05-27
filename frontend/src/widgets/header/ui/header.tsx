@@ -1,6 +1,7 @@
 import { useVersion } from '../lib/use-version';
-import { Logo, Navigation, User } from '../../../features';
-import classes from './header.module.css';
+import { Navigation, Authorization } from '../../../features';
+import { Logo } from '../../../shared';
+import classes from './header.module.scss';
 
 export const Header = () => {
     const version = useVersion();
@@ -10,7 +11,7 @@ export const Header = () => {
             <div className={classes.wrapper}>
                 <Logo />
                 {version || <Navigation />}
-                {version || <User />}
+                <Authorization />
             </div>
         </div>
     );

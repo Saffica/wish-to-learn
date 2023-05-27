@@ -1,7 +1,8 @@
 import { Button } from '../../../shared';
-import classes from './registration.module.css';
+import classes from './registration.module.scss';
 
-export const Registration = (props: RegistrationProps) => {
+
+export const Registration: React.FunctionComponent<IRegistrationProps> = (props) => {
     return (
         <div className={`${classes.registration} ${props.className}`}>
             <div className={classes.container}>

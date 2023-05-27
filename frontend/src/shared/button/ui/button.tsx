@@ -1,13 +1,13 @@
-import classes from './button.module.css';
+import classes from './button.module.scss';
 
-export const Button = ({
+export const Button: React.FunctionComponent<IButtonProps> = ({
     title,
     width,
     height,
     color,
     backgroundColor,
     onClick
-}: ButtonProps): JSX.Element => {
+}) => {
     return <button
         style={{
             width,
