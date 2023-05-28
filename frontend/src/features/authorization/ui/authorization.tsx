@@ -1,11 +1,12 @@
-import { HeaderButton } from '../../../shared';
+import { SignIn } from '../../../entities';
+import { SignOut } from '../../../entities';
+import classes from './authorization.module.scss';
 
 export const Authorization: React.FunctionComponent = () => {
+    const isAuthorization = false;
     return (
-        <div className='authorization'>
-            <HeaderButton title='Войти' onClick={() => console.log('войти')} />
-            {/* <UserPhoto /> */}
-
+        <div className={classes.authorization}>
+            {isAuthorization ? <SignOut /> : <SignIn />}
         </div>
     )
 }
