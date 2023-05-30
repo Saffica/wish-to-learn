@@ -1,8 +1,11 @@
 .menu {
+    z-index: 3;
     position: absolute;
     top: 96px;
-    right: 0;
+    bottom: 0;
+    right: -120%;
     background-color: #fff;
+    transition: 0.5s ease-in-out;
     .list {
         list-style: none;
         padding: 0;
@@ -37,9 +40,12 @@
     }
 }
 
+.menu.open{ 
+    right: 0;
+}
+
 @media (max-width: 991px) {
     .menu {
-        height: calc(100vh - 146px);
         width: 100vw;
         .list {
             padding: 16px;
@@ -47,8 +53,8 @@
     }
 }
 
-@media (min-width: 991px) { 
-    .menu { 
-        display: none;
-    }
-}
+// @media (min-width: 991px) { 
+//     .menu { 
+//         display: none;
+//     }
+// }

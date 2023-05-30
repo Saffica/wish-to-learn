@@ -19,9 +19,6 @@ declare global {
     export interface IOnClick {
         onClick?: () => void
     }
-    export interface IOnClickMandatory {
-        onClick: () => void
-    }
     export interface IBackgroundColor {
         backgroundColor?: string
     }
@@ -38,7 +35,13 @@ declare global {
         link: string
     }
     export interface IImgSrc {
-        src?: string;
+        src?: string
+    }
+    export interface IIsOpenMandatory {
+        isOpen: boolean
+    }
+    export interface IOnClickMandatory {
+        onClick: () => void
     }
 
     export interface IRegistrationProps extends IClassName { }
@@ -57,7 +60,9 @@ declare global {
 
     export interface IUserPhotoProps extends IImgSrc { }
 
-    export interface IburgerButtonProps extends IOnClickMandatory { }
+    export interface IMenuProps extends IOnClickMandatory, IIsOpenMandatory { }
+
+    export interface IburgerButtonProps extends IMenuProps { }
 }
 
 export { }
