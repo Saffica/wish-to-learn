@@ -4,6 +4,7 @@
     top: 96px;
     bottom: 0;
     right: -120%;
+    width: 100vw;
     background-color: #fff;
     transition: 0.5s ease-in-out;
     .list {
@@ -46,15 +47,8 @@
 
 @media (max-width: 991px) {
     .menu {
-        width: 100vw;
         .list {
             padding: 16px;
         }
     }
 }
-
-// @media (min-width: 991px) { 
-//     .menu { 
-//         display: none;
-//     }
-// }

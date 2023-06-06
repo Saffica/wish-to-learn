@@ -5,9 +5,9 @@ export const Layout: React.FunctionComponent = () => {
     return (
         <>
             <Header />
-            <main>
+            {/* <main>
                 <Outlet />
-            </main>
+            </main> */}
             <Footer text='© 2023 хочу-учу.рф' />
         </>
     )

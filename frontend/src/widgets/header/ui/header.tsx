@@ -3,22 +3,19 @@ import { Logo, BurgerButton } from '../../../shared';
 import { useState, useEffect } from 'react';
 import classes from './header.module.scss';
 
-export const Header = () => {
-    const isMobile = () => {
-        console.log(`${window.innerWidth} <= 991`);
-        console.log(window.innerWidth <= 991)
-        return window.innerWidth <= 991;
-    }
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [format, setFormat] = useState(isMobile());
-    console.log(format);
+export const Header: React.FunctionComponent = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+    const [format, setFormat] = useState<boolean | undefined>();
 
     useEffect(() => {
-        const handleSubscribe = () => setFormat(isMobile());
+        const isMobile = () => window.innerWidth <= 991;
+        setFormat(() => isMobile());
+
+        const handleSubscribe = () => setFormat(() => isMobile());
         window.addEventListener('resize', handleSubscribe);
 
         return () => window.removeEventListener('resize', handleSubscribe);
-    });
+    }, []);
 
     const handleMenu = () => setIsMenuOpen(!isMenuOpen);
 
