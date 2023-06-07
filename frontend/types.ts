@@ -52,7 +52,7 @@ declare global {
 
     export interface IFeedbackProps extends IClassName { }
 
-    export interface IAboutPlatformProps extends IClassName { }
+    export interface IGeneralProps extends IClassName { }
 
     export interface IHeaderLinkProps extends ITitle, ILink { }
 

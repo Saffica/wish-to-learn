@@ -1,12 +1,12 @@
 import { Button } from '../../../shared';
 import { items } from '../consts/items';
-import classes from './about-platform.module.scss';
+import classes from './general.module.scss';
 import desktopImgPath from '../lib/imgs/desktop.png';
 
 
-export const AboutPlatform: React.FunctionComponent<IAboutPlatformProps> = (props) => {
+export const General: React.FunctionComponent<IGeneralProps> = (props) => {
     return (
-        <div className={`${classes.about} ${props.className}`} >
+        <div className={`${classes.general} ${props.className}`} >
             <div className={classes.top}>
                 <div className={classes.description}>
                     платформа длясамообразования
