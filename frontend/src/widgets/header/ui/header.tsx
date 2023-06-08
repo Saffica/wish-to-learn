@@ -8,7 +8,7 @@ export const Header: React.FunctionComponent = () => {
     const [format, setFormat] = useState<boolean | undefined>();
 
     useEffect(() => {
-        const isMobile = () => window.innerWidth <= 991;
+        const isMobile = () => window.innerWidth < 768;
         setFormat(() => isMobile());
 
         const handleSubscribe = () => setFormat(() => isMobile());

@@ -9,11 +9,13 @@ export const General: React.FunctionComponent<IGeneralProps> = (props) => {
         <div className={`${classes.general} ${props.className}`} >
             <div className={classes.top}>
                 <div className={classes.description}>
-                    платформа длясамообразования
+                    платформа для самообразования
                 </div>
                 <div className={classes.title}>хочу учу</div>
                 <div className={classes.subtitle}>возьми свое обучение под контроль</div>
-                <Button title='К списку планов' width='100%' backgroundColor='#42597B' height='64px' color='#fff' />
+                <div className={classes.button}>
+                    <Button title='К списку планов' width='100%' backgroundColor='#42597B' height='64px' color='#fff' />
+                </div>
             </div>
             <div className={classes.items}>
                 {items.map(({ title, description, id }) => <div className={classes.item} key={id}>
