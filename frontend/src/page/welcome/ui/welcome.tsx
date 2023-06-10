@@ -8,9 +8,9 @@ const WelcomePage = () => {
             <section className={classes.general}>
                 <General className={classes.general} />
             </section>
-            {/* <section className={classes.about}>
+            <section className={classes.about}>
                 <About />
-            </section> */}
+            </section>
         </div>
     );
 };
