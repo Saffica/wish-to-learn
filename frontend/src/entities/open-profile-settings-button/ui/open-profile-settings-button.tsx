@@ -1,9 +1,9 @@
-import classes from './open-profile-settings-button.module.scss';
 import { UserPhoto } from '../../../shared';
+import styles from './open-profile-settings-button.module.scss';
 
 export const OpenProfileButton: React.FunctionComponent<IUserPhotoProps> = () => {
     return (
-        <button className={classes.openProfileButton}>
+        <button className={styles.openProfileButton}>
             <UserPhoto />
         </button>
     )

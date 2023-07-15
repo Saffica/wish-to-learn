@@ -1,14 +1,14 @@
 import { General } from '../../../widgets';
 import { About } from '../../../widgets';
-import classes from './welcome.module.scss';
+import styles from './welcome.module.scss';
 
 const WelcomePage = () => {
     return (
-        <div className={classes.welcome}>
-            <section className={classes.general}>
-                <General className={classes.general} />
+        <div className={styles.welcome}>
+            <section className={styles.general}>
+                <General className={styles.general} />
             </section>
-            <section className={classes.about}>
+            <section className={styles.about}>
                 <About />
             </section>
         </div>

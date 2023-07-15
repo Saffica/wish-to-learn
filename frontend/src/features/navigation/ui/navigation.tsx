@@ -1,5 +1,5 @@
-import classes from './navigation.module.scss';
 import { HeaderLink } from '../../../shared';
+import styles from './navigation.module.scss';
 
 export const Navigation = () => {
     const items = [
@@ -8,12 +8,12 @@ export const Navigation = () => {
     ];
 
     return (
-        <div className={classes.navigation}>
+        <div className={styles.navigation}>
             {
-                <ul className={classes.navigationList}>
+                <ul className={styles.navigationList}>
                     {items.map(({ title, link, id }) => (
                         <li
-                            className={classes.navigationItem}
+                            className={styles.navigationItem}
                             key={id}>
                             <HeaderLink link={link} title={title} />
                         </li>

@@ -1,10 +1,10 @@
 import { router } from './router';
-import classes from './index.module.scss';
-import { RouterProvider } from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom';
+import styles from './index.module.scss';
 
 const App: React.FunctionComponent = () => {
     return (
-        <div className={classes.app}>
+        <div className={styles.app}>
             <RouterProvider router={router} />
         </div>
     );

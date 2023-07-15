@@ -1,4 +1,4 @@
-import classes from './button.module.scss';
+import styles from './button.module.scss';
 
 export const Button: React.FunctionComponent<IButtonProps> = ({
     title,
@@ -16,7 +16,7 @@ export const Button: React.FunctionComponent<IButtonProps> = ({
             backgroundColor
         }}
         onClick={onClick}
-        className={classes.btn}>
+        className={styles.btn}>
         {title}
     </button>
 }

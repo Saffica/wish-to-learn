@@ -1,7 +1,7 @@
 import { Navigation, Authorization, OpenProfileSettings, Menu } from '../../../features';
 import { Logo, BurgerButton } from '../../../shared';
 import { useState, useEffect } from 'react';
-import classes from './header.module.scss';
+import styles from './header.module.scss';
 
 export const Header: React.FunctionComponent = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -20,8 +20,8 @@ export const Header: React.FunctionComponent = () => {
     const handleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     return (
-        <div className={classes.header}>
-            <div className={classes.wrapper}>
+        <div className={styles.header}>
+            <div className={styles.wrapper}>
                 <Logo />
                 {format || <Navigation />}
                 {format || <Authorization />}
