@@ -1,9 +1,9 @@
-import classes from './footer.module.css';
+import styles from './footer.module.scss';
 
-export const Footer = ({ text }: FooterProps): JSX.Element => {
+export const Footer: React.FunctionComponent<IFooterProps> = (props) => {
     return (
-        <footer className={classes.footer}>
-            {text}
+        <footer className={styles.footer}>
+            {props.text}
         </footer>
     )
 }

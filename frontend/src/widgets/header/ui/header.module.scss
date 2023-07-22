@@ -1,0 +1,16 @@
+.header {
+    background-color: #42597b;
+    padding: 16px;
+    height: 64px;
+    overflow: hidden;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        max-height: 85px;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}

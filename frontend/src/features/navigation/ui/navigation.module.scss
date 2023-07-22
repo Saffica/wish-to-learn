@@ -1,0 +1,10 @@
+.navigation {
+    display: flex;
+    width: 100%;
+    .navigationList {
+        display: flex;
+        list-style-type: none;
+        gap: 30px;
+        padding: 0;
+    }
+}

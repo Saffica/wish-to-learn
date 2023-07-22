@@ -1,5 +1,4 @@
 export { Header } from './header';
-export { AboutPlatform } from './about-platform';
+export { General } from './general';
 export { Footer } from './footer';
-export { Registration } from './registration';
-export { Feedback } from './feedback';
+export { About } from './about';

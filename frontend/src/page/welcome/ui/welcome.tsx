@@ -1,15 +1,16 @@
-import { AboutPlatform } from '../../../widgets';
-import { Registration } from '../../../widgets';
-import { Feedback } from '../../../widgets';
-import classes from './welcome.module.css';
-
+import { General } from '../../../widgets';
+import { About } from '../../../widgets';
+import styles from './welcome.module.scss';
 
 const WelcomePage = () => {
     return (
-        <div className={classes.welcome}>
-            <AboutPlatform className={classes.about} />
-            <Registration className={classes.registration} />
-            <Feedback className={classes.feedback} />
+        <div className={styles.welcome}>
+            <section className={styles.general}>
+                <General className={styles.general} />
+            </section>
+            <section className={styles.about}>
+                <About />
+            </section>
         </div>
     );
 };
